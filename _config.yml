@@ -1,6 +1,13 @@
 title: NotePo
-description: "A secure, synced, and elegant note-taking experience."
+description: "A beautiful, minimal note-taking app designed to help you capture your thoughts quickly and elegantly."
+url: "https://notepoapp.github.io/"
+author: "NotePo"
+image: "/assets/images/logo.webp"
+logo: "/assets/images/logo.webp"
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+sass:
+  quiet_deps: true

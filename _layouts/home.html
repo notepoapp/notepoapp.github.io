@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }} - {{ site.description }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
+  {% seo %}
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="header">
+      <div class="logo-container">
+        <a href="/">
+          <img src="{{ '/assets/images/logo.webp' | relative_url }}" alt="NotePo Logo" class="logo-image" fetchpriority="high" width="320" height="320">
+        </a>
+      </div>
+    </header>
+
+    <div class="screenshots-container">
+      <img src="{{ '/assets/images/notes.webp' | relative_url }}" alt="Notes Screen" class="screenshot-image" fetchpriority="high" width="250" height="500">
+      <img src="{{ '/assets/images/dark-mode.webp' | relative_url }}" alt="Dark Mode Screen" class="screenshot-image" width="250" height="500">
+      <img src="{{ '/assets/images/reminders.webp' | relative_url }}" alt="Reminders Screen" class="screenshot-image" loading="lazy" width="250" height="500">
+      <img src="{{ '/assets/images/viewing-notes.webp' | relative_url }}" alt="Viewing Notes Screen"
+        class="screenshot-image" loading="lazy" width="250" height="500">
+      <img src="{{ '/assets/images/more-options.webp' | relative_url }}" alt="More Options Screen"
+        class="screenshot-image" loading="lazy" width="250" height="500">
+    </div>
+
+    <section class="hero">
+
+      <div class="content-area">
+        {{ content }}
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="/privacy/">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+
+</html>

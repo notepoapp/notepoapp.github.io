@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} - {{ page.postTitle }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
+  {% seo %}
+  <style>
+    .page-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .page-content h1,
+    .page-content h2,
+    .page-content h3 {
+      color: var(--text-color);
+      margin-top: 2rem;
+    }
+
+    .page-content p,
+    .page-content li {
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.6;
+    }
+
+    .page-content a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="header">
+      <div class="logo-container">
+        <a href="/">
+          <img src="{{ '/assets/images/logo.webp' | relative_url }}" alt="NotePo Logo" class="logo-image" fetchpriority="high" width="320" height="320">
+        </a>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      <a href="/privacy/">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+
+</html>
