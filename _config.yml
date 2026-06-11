@@ -1,0 +1,6 @@
+title: NotePo
+description: "A secure, synced, and elegant note-taking experience."
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
