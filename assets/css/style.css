@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
 :root {
-  --primary-color: #1e3a5f;
-  --text-color: #ffffff;
-  --bg-color: #e6eef4;
+  --primary-color: #ffffff;
+  --text-color: #111111;
+  --bg-color: #ffffff;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-color);
-  background-image:
-    radial-gradient(circle at 10% 20%, rgba(255, 182, 193, 0.4) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(173, 216, 230, 0.5) 0%, transparent 40%);
+  background-color: var(--primary-color);
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -32,7 +29,6 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding-bottom: 4rem;
 }
 
 /* Header */
@@ -57,8 +53,6 @@ body {
   width: auto;
   transform: scale(2.5);
   transform-origin: center center;
-  filter: invert(1);
-  mix-blend-mode: screen;
 }
 
 /* Hero Section */
@@ -102,7 +96,7 @@ body {
 }
 
 .hero-subtitle {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(0, 0, 0, 0.85);
   font-size: 1.2rem;
   font-weight: 400;
   max-width: 600px;
@@ -129,15 +123,15 @@ body {
 }
 
 .content-area li {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   padding: 1rem 1.5rem;
   border-radius: 12px;
   font-size: 1.05rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .content-area li strong {
-  color: #fff;
+  color: #000;
 }
 
 .actions {
@@ -154,7 +148,7 @@ body {
   background-color: #000;
   color: #fff;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: left;
   line-height: 1.2;
   text-decoration: none;
@@ -185,8 +179,8 @@ body {
 .screenshots-container {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem 4rem;
+  gap: clamp(0.5rem, 1.5vw, 1.5rem);
+  padding: 2rem clamp(1rem, 4vw, 4rem);
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -197,45 +191,43 @@ body {
 
 .screenshot-placeholder {
   flex: 0 0 auto;
-  width: 250px;
-  height: 500px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
+  width: clamp(120px, 16vw, 250px);
+  height: auto;
+  aspect-ratio: 1 / 2;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px dashed rgba(0, 0, 0, 0.2);
+  border-radius: clamp(10px, 1.5vw, 20px);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .screenshot-image {
   flex: 0 0 auto;
-  width: 250px;
-  height: 500px;
+  width: clamp(120px, 16vw, 250px);
+  height: auto;
+  aspect-ratio: 1 / 2;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: clamp(10px, 1.5vw, 20px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   background-color: #000;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem;
-  margin-top: auto;
-}
-
-.footer a {
-  color: rgba(255, 255, 255, 0.6);
+/* Privacy Link */
+.privacy-link {
+  display: inline-block;
+  margin-top: 2.5rem;
+  color: rgba(0, 0, 0, 0.4);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: color 0.2s;
 }
 
-.footer a:hover {
-  color: #fff;
+.privacy-link:hover {
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: underline;
 }
 
@@ -276,12 +268,6 @@ body {
     justify-content: flex-start;
     padding: 1.5rem 1rem;
     gap: 1rem;
-  }
-
-  .screenshot-placeholder,
-  .screenshot-image {
-    width: 160px;
-    height: 320px;
   }
 
   .content-area {
