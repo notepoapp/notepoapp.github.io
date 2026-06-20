@@ -53,6 +53,7 @@ We may share your information with third-party service providers that perform se
 We believe you should have full control over your data. You can manage your privacy directly within the App via the **Settings > Privacy & Data** menu:
 - **Disable Cloud Sync:** Turning off Cloud Sync will instantly delete all of your notes from our cloud servers.
 - **Account Deletion:** You can permanently delete your account at any time. This action will erase your account profile and all associated cloud data immediately and irreversibly.
+- **Facebook Data Deletion:** If you logged in using Facebook, you can find specific instructions on how to remove our app's access to your data on our [Data Deletion Instructions](/data-deletion/) page.
 - **Ad Privacy Choices:** You can review and update your consent for personalized advertising through the app's privacy settings.
 
 ## 5. Security of Your Information
